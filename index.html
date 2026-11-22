@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="theme-color" content="#0b1530" />
+  <title>ECO: Sky Booster</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <!-- 모든 라이브러리는 assets/vendor 에 로컬 보관 (외부 CDN 의존 없음 · 오프라인 동작) -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "./assets/vendor/three/build/three.module.js",
+      "three/addons/": "./assets/vendor/three/examples/jsm/",
+      "simplex-noise": "./assets/vendor/simplex-noise/simplex-noise.js",
+      "@pixiv/three-vrm": "./assets/vendor/three-vrm/three-vrm.module.min.js"
+    }
+  }
+  </script>
+  <!-- Lucide Icons (ISC) — assets/vendor 에 로컬 보관 -->
+  <script src="./assets/vendor/lucide.min.js"></script>
+</head>
+<body>
+  <canvas id="c"></canvas>
+  <div id="touchLayer"></div>
+  <div id="hurt"></div>
+  <div id="screenFlash"></div>
+  <div id="combo" class="hud"><b>0</b><span>HITS</span></div>
+  <div id="floatLayer"></div>
+  <div id="joy"><div id="joyKnob"></div></div>
+  <div id="joyHint" class="hud"><i data-lucide="move"></i></div>
+
+  <!-- ===== 상단 바: [주인공] [지역/목표] [AUTO · 메뉴] ===== -->
+  <div id="topBar" class="hud">
+    <div id="hudTL">
+      <div class="heroCard">
+        <div class="row"><span id="lvTag">Lv.1</span><span class="nm" id="heroName">에코</span><span id="goldChip"></span><span id="spiritBar"></span></div>
+        <div class="bar hp"><i id="hpFill"></i><em id="shieldFill"></em><span id="hpTxt"></span></div>
+        <div class="bar boost"><i id="boostFill"></i><span>BOOST</span></div>
+        <div class="bar exp"><i id="expFill"></i></div>
+      </div>
+    </div>
+    <div id="areaInfo">
+      <div id="areaName"></div>
+      <div id="objective"></div>
+      <div id="bossBar"><div id="bossName"></div><div class="bar"><i id="bossFill"></i></div></div>
+    </div>
+    <div id="hudTR">
+      <button id="autoBtn" class="autoBtn" aria-label="AUTO"><i data-lucide="bot"></i><span class="lbl">AUTO</span><b>OFF</b></button>
+      <button id="menuToggle" class="menuToggle" aria-label="메뉴"><i data-lucide="menu"></i></button>
+      <small id="autoState" style="display:none"></small>
+    </div>
+  </div>
+
+  <!-- 접이식 메뉴 탭 바 -->
+  <div id="drawer" class="hud closed">
+    <div id="matBar"></div>
+    <div id="menuBtns">
+      <button data-panel="map"><i data-lucide="map"></i><span>지도</span></button>
+      <button data-panel="spirits"><i data-lucide="sparkles"></i><span>정령</span></button>
+      <button data-panel="chars"><i data-lucide="users"></i><span>캐릭터</span></button>
+      <button data-panel="wardrobe"><i data-lucide="shirt"></i><span>코디</span></button>
+      <button data-panel="enhance"><i data-lucide="hammer"></i><span>강화</span></button>
+      <button data-panel="bag"><i data-lucide="backpack"></i><span>가방</span></button>
+      <button id="homeBtn"><i data-lucide="house"></i><span>집</span></button>
+    </div>
+  </div>
+
+  <!-- NPC 대화 -->
+  <button id="talkBtn" class="hud hidden"><i data-lucide="message-circle"></i><span></span></button>
+
+  <!-- 우하단: 액션 버튼 -->
+  <div id="actions" class="hud">
+    <button class="act big" data-act="attack"><i data-lucide="swords"></i><span>공격</span></button>
+    <button class="act gun" data-act="gun"><i data-lucide="crosshair"></i><span>권총</span></button>
+    <button class="act boost" data-act="boost"><i data-lucide="rocket"></i><span>부스터</span></button>
+    <button class="act skill" data-act="skill"><i data-lucide="rotate-cw"></i><span>회전베기</span><i class="cd"></i></button>
+    <button class="act burst hidden" data-act="burst"><i data-lucide="zap"></i><span>버스트</span><i class="cd"></i></button>
+  </div>
+
+  <!-- 원형 미니맵 (탭/클릭 = 전체 월드맵, M 키) -->
+  <div id="minimap" class="hud" title="전체 지도 [M]"><canvas id="miniCanvas"></canvas><button id="miniBtn" aria-label="전체 지도"><i data-lucide="map"></i></button></div>
+
+  <div id="fpsMeter" class="hud hidden"></div>
+  <div id="buildBar" class="hud hidden"></div>
+  <div id="toasts"></div>
+  <div id="banner"></div>
+
+  <div id="panel" class="hidden">
+    <div class="panelBox">
+      <div class="panelHead"><h2 id="panelTitle"></h2><button id="panelClose" aria-label="닫기"><i data-lucide="x"></i></button></div>
+      <div id="panelBody"></div>
+    </div>
+  </div>
+
+  <div id="loading">
+    <div class="logo">ECO<small>: Sky Booster</small></div>
+    <div id="loadMsg">불러오는 중…</div>
+    <div class="help">
+      <b>PC</b> WASD 이동 · 좌클릭/J 공격(거리 자동: 3.5m 밖 권총 연사 · 안쪽 검 3연타) · 우클릭/K 권총 고정 · Space 탭=돌진/홀드=부양 · Shift 돌진 · E 회전베기 · R 엘레멘탈 버스트 · T AUTO · Q/C 카메라 회전 · 휠 줌 · M 월드맵 · V 캐릭터 · F 코디 · H 집<br>
+      <b>회피</b> 적의 공격 직전에 부스터 돌진(Space 탭/Shift) → 무적 + 저스트 회피 시 2초간 피해 +25%<br>
+      <b>모바일</b> 왼쪽 드래그 = 조이스틱 · 오른쪽 드래그 = 카메라 · 우하단 버튼 = 공격/부스터 · 우상단 ☰ = 메뉴 · 미니맵 탭 = 전체 지도
+    </div>
+    <button id="startBtn" disabled>▶ 모험 시작</button>
+  </div>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>

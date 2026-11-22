@@ -1,0 +1,282 @@
+[
+ {
+  "file": "assets/models/chars/hero_adventurer.glb",
+  "source": "https://cdn.cinevva.com/assets/packs/quaternius/ultimate-modular-women/Adventurer.glb",
+  "asset": "quaternius/ultimate-modular-women/Adventurer",
+  "author": "Quaternius",
+  "license": "CC0 1.0"
+ },
+ {
+  "file": "assets/models/chars/summon_tank_knight.glb",
+  "source": "https://cdn.cinevva.com/assets/packs/kaykit/characters-adventurers/Knight.glb",
+  "asset": "kaykit/characters-adventurers/Knight",
+  "author": "Kay Lousberg (KayKit)",
+  "license": "CC0 1.0"
+ },
+ {
+  "file": "assets/models/chars/summon_blade_rogue_hooded.glb",
+  "source": "https://cdn.cinevva.com/assets/packs/kaykit/characters-adventurers/Rogue_Hooded.glb",
+  "asset": "kaykit/characters-adventurers/Rogue_Hooded",
+  "author": "Kay Lousberg (KayKit)",
+  "license": "CC0 1.0"
+ },
+ {
+  "file": "assets/models/chars/summon_ranger_rogue.glb",
+  "source": "https://cdn.cinevva.com/assets/packs/kaykit/characters-adventurers/Rogue.glb",
+  "asset": "kaykit/characters-adventurers/Rogue",
+  "author": "Kay Lousberg (KayKit)",
+  "license": "CC0 1.0"
+ },
+ {
+  "file": "assets/models/chars/summon_mage.glb",
+  "source": "https://cdn.cinevva.com/assets/packs/kaykit/characters-adventurers/Mage.glb",
+  "asset": "kaykit/characters-adventurers/Mage",
+  "author": "Kay Lousberg (KayKit)",
+  "license": "CC0 1.0"
+ },
+ {
+  "file": "assets/models/chars/npc_blacksmith_barbarian.glb",
+  "source": "https://cdn.cinevva.com/assets/packs/kaykit/characters-adventurers/Barbarian.glb",
+  "asset": "kaykit/characters-adventurers/Barbarian",
+  "author": "Kay Lousberg (KayKit)",
+  "license": "CC0 1.0"
+ },
+ {
+  "file": "assets/models/chars/npc_spirit_witch.glb",
+  "source": "https://cdn.cinevva.com/assets/packs/quaternius/ultimate-modular-women/Witch.glb",
+  "asset": "quaternius/ultimate-modular-women/Witch",
+  "author": "Quaternius",
+  "license": "CC0 1.0"
+ },
+ {
+  "file": "assets/models/chars/npc_merchant_kimono.glb",
+  "source": "https://cdn.cinevva.com/assets/packs/quaternius/ultimate-animated-characters/Kimono_Female.glb",
+  "asset": "quaternius/ultimate-animated-characters/Kimono_Female",
+  "author": "Quaternius",
+  "license": "CC0 1.0"
+ },
+ {
+  "file": "assets/models/monsters/slime_greenblob.glb",
+  "source": "https://cdn.cinevva.com/assets/packs/quaternius/ultimate-monsters/GreenBlob.glb",
+  "asset": "quaternius/ultimate-monsters/GreenBlob",
+  "author": "Quaternius",
+  "license": "CC0 1.0"
+ },
+ {
+  "file": "assets/models/monsters/kingslime_greenspikyblob.glb",
+  "source": "https://cdn.cinevva.com/assets/packs/quaternius/ultimate-monsters/GreenSpikyBlob.glb",
+  "asset": "quaternius/ultimate-monsters/GreenSpikyBlob",
+  "author": "Quaternius",
+  "license": "CC0 1.0"
+ },
+ {
+  "file": "assets/models/monsters/wolf.glb",
+  "source": "https://cdn.cinevva.com/assets/packs/quaternius/ultimate-animated-animals/Wolf.glb",
+  "asset": "quaternius/ultimate-animated-animals/Wolf",
+  "author": "Quaternius",
+  "license": "CC0 1.0"
+ },
+ {
+  "file": "assets/models/monsters/golem_goleling_evolved.glb",
+  "source": "https://cdn.cinevva.com/assets/packs/quaternius/ultimate-monsters/Goleling_Evolved.glb",
+  "asset": "quaternius/ultimate-monsters/Goleling_Evolved",
+  "author": "Quaternius",
+  "license": "CC0 1.0"
+ },
+ {
+  "file": "assets/models/monsters/crystalking_big_yeti.glb",
+  "source": "https://cdn.cinevva.com/assets/packs/quaternius/ultimate-monsters/Big_Yeti.glb",
+  "asset": "quaternius/ultimate-monsters/Big_Yeti",
+  "author": "Quaternius",
+  "license": "CC0 1.0"
+ },
+ {
+  "file": "assets/models/monsters/bat.glb",
+  "source": "https://cdn.cinevva.com/assets/packs/quaternius/cute-animated-monsters/Bat.glb",
+  "asset": "quaternius/cute-animated-monsters/Bat",
+  "author": "Quaternius",
+  "license": "CC0 1.0"
+ },
+ {
+  "file": "assets/models/monsters/wraith_ghost.glb",
+  "source": "https://cdn.cinevva.com/assets/packs/quaternius/ultimate-monsters/Ghost.glb",
+  "asset": "quaternius/ultimate-monsters/Ghost",
+  "author": "Quaternius",
+  "license": "CC0 1.0"
+ },
+ {
+  "file": "assets/models/monsters/knight_skeleton_warrior.glb",
+  "source": "https://cdn.cinevva.com/assets/packs/kaykit/characters-skeletons/Skeleton_Warrior.glb",
+  "asset": "kaykit/characters-skeletons/Skeleton_Warrior",
+  "author": "Kay Lousberg (KayKit)",
+  "license": "CC0 1.0"
+ },
+ {
+  "file": "assets/models/monsters/guardian_big_demon.glb",
+  "source": "https://cdn.cinevva.com/assets/packs/quaternius/ultimate-monsters/Big_Demon.glb",
+  "asset": "quaternius/ultimate-monsters/Big_Demon",
+  "author": "Quaternius",
+  "license": "CC0 1.0"
+ },
+ {
+  "file": "assets/models/monsters/dragon_evolved.glb",
+  "source": "https://cdn.cinevva.com/assets/packs/quaternius/ultimate-monsters/Dragon_Evolved.glb",
+  "asset": "quaternius/ultimate-monsters/Dragon_Evolved",
+  "author": "Quaternius",
+  "license": "CC0 1.0"
+ },
+ {
+  "file": "assets/models/props/tree_park.glb",
+  "source": "https://cdn.cinevva.com/assets/packs/isalousberg/pretty-park/tree.glb",
+  "asset": "isalousberg/pretty-park/tree",
+  "author": "Isa Lousberg",
+  "license": "CC0 1.0"
+ },
+ {
+  "file": "assets/models/props/tree_park_large.glb",
+  "source": "https://cdn.cinevva.com/assets/packs/isalousberg/pretty-park/tree_large.glb",
+  "asset": "isalousberg/pretty-park/tree_large",
+  "author": "Isa Lousberg",
+  "license": "CC0 1.0"
+ },
+ {
+  "file": "assets/models/props/tree_round_high.glb",
+  "source": "https://cdn.cinevva.com/assets/packs/kenney/fantasy-town-kit/tree-high-round.glb",
+  "asset": "kenney/fantasy-town-kit/tree-high-round",
+  "author": "Kenney",
+  "license": "CC0 1.0"
+ },
+ {
+  "file": "assets/models/props/tree_pine_orange.glb",
+  "source": "https://cdn.cinevva.com/assets/packs/kaykit/halloween-bits/tree_pine_orange_large.glb",
+  "asset": "kaykit/halloween-bits/tree_pine_orange_large",
+  "author": "Kay Lousberg (KayKit)",
+  "license": "CC0 1.0"
+ },
+ {
+  "file": "assets/models/props/tree_dead.glb",
+  "source": "https://cdn.cinevva.com/assets/packs/kaykit/halloween-bits/tree_dead_large.glb",
+  "asset": "kaykit/halloween-bits/tree_dead_large",
+  "author": "Kay Lousberg (KayKit)",
+  "license": "CC0 1.0"
+ },
+ {
+  "file": "assets/models/props/bush.glb",
+  "source": "https://cdn.cinevva.com/assets/packs/isalousberg/pretty-park/bush.glb",
+  "asset": "isalousberg/pretty-park/bush",
+  "author": "Isa Lousberg",
+  "license": "CC0 1.0"
+ },
+ {
+  "file": "assets/models/props/bush_large.glb",
+  "source": "https://cdn.cinevva.com/assets/packs/isalousberg/pretty-park/bush_large.glb",
+  "asset": "isalousberg/pretty-park/bush_large",
+  "author": "Isa Lousberg",
+  "license": "CC0 1.0"
+ },
+ {
+  "file": "assets/models/props/rock_large.glb",
+  "source": "https://cdn.cinevva.com/assets/packs/kenney/fantasy-town-kit/rock-large.glb",
+  "asset": "kenney/fantasy-town-kit/rock-large",
+  "author": "Kenney",
+  "license": "CC0 1.0"
+ },
+ {
+  "file": "assets/models/props/rock_small.glb",
+  "source": "https://cdn.cinevva.com/assets/packs/kenney/fantasy-town-kit/rock-small.glb",
+  "asset": "kenney/fantasy-town-kit/rock-small",
+  "author": "Kenney",
+  "license": "CC0 1.0"
+ },
+ {
+  "file": "assets/models/props/rock_wide.glb",
+  "source": "https://cdn.cinevva.com/assets/packs/kenney/fantasy-town-kit/rock-wide.glb",
+  "asset": "kenney/fantasy-town-kit/rock-wide",
+  "author": "Kenney",
+  "license": "CC0 1.0"
+ },
+ {
+  "file": "assets/models/props/pillar_decorated.glb",
+  "source": "https://cdn.cinevva.com/assets/packs/kaykit/dungeon-remastered/pillar_decorated.glb",
+  "asset": "kaykit/dungeon-remastered/pillar_decorated",
+  "author": "Kay Lousberg (KayKit)",
+  "license": "CC0 1.0"
+ },
+ {
+  "file": "assets/models/props/wall_arched.glb",
+  "source": "https://cdn.cinevva.com/assets/packs/kaykit/dungeon-remastered/wall_arched.glb",
+  "asset": "kaykit/dungeon-remastered/wall_arched",
+  "author": "Kay Lousberg (KayKit)",
+  "license": "CC0 1.0"
+ },
+ {
+  "file": "assets/models/props/obelisk.glb",
+  "source": "https://cdn.cinevva.com/assets/packs/kenney/graveyard-kit/pillar-obelisk.glb",
+  "asset": "kenney/graveyard-kit/pillar-obelisk",
+  "author": "Kenney",
+  "license": "CC0 1.0"
+ },
+ {
+  "file": "assets/models/props/house.glb",
+  "source": "https://cdn.cinevva.com/assets/packs/isalousberg/homely-house/house.glb",
+  "asset": "isalousberg/homely-house/house",
+  "author": "Isa Lousberg",
+  "license": "CC0 1.0"
+ },
+ {
+  "file": "assets/models/props/fence.glb",
+  "source": "https://cdn.cinevva.com/assets/packs/isalousberg/homely-house/fence_straight_long.glb",
+  "asset": "isalousberg/homely-house/fence_straight_long",
+  "author": "Isa Lousberg",
+  "license": "CC0 1.0"
+ },
+ {
+  "file": "assets/models/props/street_lantern.glb",
+  "source": "https://cdn.cinevva.com/assets/packs/isalousberg/pretty-park/street_lantern.glb",
+  "asset": "isalousberg/pretty-park/street_lantern",
+  "author": "Isa Lousberg",
+  "license": "CC0 1.0"
+ },
+ {
+  "file": "assets/models/props/well.glb",
+  "source": "https://cdn.cinevva.com/assets/packs/kaykit/medieval-hexagon/building_well_blue.glb",
+  "asset": "kaykit/medieval-hexagon/building_well_blue",
+  "author": "Kay Lousberg (KayKit)",
+  "license": "CC0 1.0"
+ },
+ {
+  "file": "assets/models/furniture/bed.glb",
+  "source": "https://cdn.cinevva.com/assets/packs/kaykit/furniture-bits/bed_double_A.glb",
+  "asset": "kaykit/furniture-bits/bed_double_A",
+  "author": "Kay Lousberg (KayKit)",
+  "license": "CC0 1.0"
+ },
+ {
+  "file": "assets/models/furniture/weapon_rack.glb",
+  "source": "https://cdn.cinevva.com/assets/packs/kenney/mini-arena/weapon-rack.glb",
+  "asset": "kenney/mini-arena/weapon-rack",
+  "author": "Kenney",
+  "license": "CC0 1.0"
+ },
+ {
+  "file": "assets/models/furniture/altar.glb",
+  "source": "https://cdn.cinevva.com/assets/packs/kenney/graveyard-kit/altar-stone.glb",
+  "asset": "kenney/graveyard-kit/altar-stone",
+  "author": "Kenney",
+  "license": "CC0 1.0"
+ },
+ {
+  "file": "assets/models/furniture/training_dummy.glb",
+  "source": "https://cdn.cinevva.com/assets/packs/kaykit/prototype-bits/target_stand_A_Decorated.glb",
+  "asset": "kaykit/prototype-bits/target_stand_A_Decorated",
+  "author": "Kay Lousberg (KayKit)",
+  "license": "CC0 1.0"
+ },
+ {
+  "file": "assets/models/furniture/flowers.glb",
+  "source": "https://cdn.cinevva.com/assets/packs/kenney/coaster-kit/flowers.glb",
+  "asset": "kenney/coaster-kit/flowers",
+  "author": "Kenney",
+  "license": "CC0 1.0"
+ }
+]

@@ -1,0 +1,27 @@
+# ---- 비밀/개인 정보 (현재 폴더에는 없음 — 앞으로 생겨도 올라가지 않도록) ----
+.env
+.env.*
+*.pem
+*.key
+secrets*/
+credentials*.json
+
+# ---- 라이선스상 재배포 금지 VRM (PC 로컬 플레이 전용) ----
+assets/models/ophelia.vrm
+assets/models/the_sister.vrm
+# 원본/중복 모델 폴더 (assets/models 에 사본 있음 · 재배포 금지 VRM 포함)
+/models/
+
+# ---- 더 이상 쓰지 않는 소환수 모델 (v0.5 서포터 제거) ----
+assets/models/chars/summon_*.glb
+
+# ---- 개발 부산물 ----
+node_modules/
+dist/
+.vscode/
+.idea/
+.claude/
+*.log
+Thumbs.db
+Desktop.ini
+.DS_Store
